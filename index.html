@@ -16,6 +16,11 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&display=swap" rel="stylesheet">
+
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -24,15 +29,28 @@
 </head>
 <body>
   <div class="container">
-    <!-- Change to Bootstrap nav with Image and text -->
-    <header>
-      <h1>Circle Cat University</h1>
+    <header class="row">
+      <div class="brand">
+      <a href="#">
+        <img src="./img/playful-cat-by-graphuvarov-on-logopond-400px.png" alt="A cat playing with a bright star curled up in a circle in the shape of the letter C.">
+        <!-- logo design by graphuvarov on logopond: https://logopond.com/graphuvarov/showcase/detail/308144 -->
+      </a>
+        <h1>Circle Cat University</h1>
+      </div> <!--end of .brand-->
       <nav>
-        <ul>
-          <li>About</li>
-          <li>Courses</li>
-          <li>Impact</li>
-          <li>Contact</li>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Impact</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Contact</a>
+          </li> 
         </ul>
       </nav>
     </header>
@@ -40,41 +58,41 @@
       <!-- mission section -->
       <section>
         <h2>Mission</h2>
-        <p>Our goal is to shape people who love felines into he best possible caregivers for their furry friends. Our courses guide and support the ebb and flow of the feline to human relationship toward it's natural balance. <br> Because cat's don't have owners they have staff.</p>
+        <p>Our goal is to shape people who love felines into the best possible caregivers for their furry friends. Our courses guide and support the ebb and flow of the feline to human relationship toward it's natural balance. <br> Because cat's don't have owners they have staff.</p>
       </section>
       <!-- courses section -->
-      <section>
+      <section class="row">
         <h2>Courses</h2>
-        <article>
+        <article class="col">
           <h3>Anticipating Hunger</h3>
           <p>Spoiler alert you're already too late</p>
         </article>
-        <article>
+        <article class="col">
           <h3>Cat-shmere Dreams</h3>
           <p>Learning to relinquish your favourite sweater</p>
         </article>
-        <article>
+        <article class="col">
           <h3>Before the Bite</h3>
           <p>How to know when a snuggle session is over</p>
         </article>
       </section>
       <!-- impact section -->
-      <section>
+      <section class="row">
         <h2>Why Study at Circle Cat?</h2>
         <p>The proof is in the catnip</p>
-        <article>
+        <article class="col">
           <h3>90% of cats</h3>
           <p>feel their staff need better training</p>
         </article>
-        <article>
+        <article class="col">
           <h3>85% of people</h3>
           <p>who have cats wrongfully thought they were low maintenance pets</p>
         </article>
-        <article>
+        <article class="col">
           <h3>80% of people</h3>
           <p>learned something new about cats from our courses</p>
         </article>
-        <article>
+        <article class="col">
           <h3>98% of cats</h3>
           <p>were happy you were out of the house so they could smash things</p>
         </article>
@@ -86,28 +104,28 @@
           <p>"Meow, meeeeow, meow-meow meow meow. Meeee-ow meow meeooow mew mew purrrrrrr!"</p>
           <p>-Snowball</p>
         </div>
-        <div>
+        <div class="hidden">
           <p>"Smokey and I have never gotten along better! Circle Cat University taught me that my main focus should always be on subservience to felines. Conceding to this has made our days smoother and happier!"</p>
           <p>-Tamara</p>
         </div>
-        <div>
+        <div class="hidden">
           <p>"Puuuuurrrrrrrrrr, meow! Meow mew mew meow!"</p>
           <p>-Fluffy</p>
         </div>
-        <div>
+        <div class="hidden">
           <p>"Circle Cat University helped me learn all the sign and signals I was missing related to cat hunger. Now we all eat in peace without a chorus of guttural deep meows!"</p>
           <p>-Albert</p>
         </div>
       </section>
       <!-- CTA for newsletter -->
       <section>
-        <h2>Be in the know</h2>
+        <h2>Be in the meo-know</h2>
         <p>Stay up to date on new course offerings, promotions and some cat videos of course!</p>
         <!-- some type of email input here styled nicely-->
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="row">
+      <section class="col">
         <h4>Contact Info</h4>
         <p>705-867-5309</p>
         <p>hello@circlecat.biz</p>
@@ -117,24 +135,29 @@
           L4N 9Y3
         </address>
       </section>
-      <section>
+      <section class="col">
         <h4>Let's Get Social</h4>
         <p> add fa social icons here</p>
         <p>Coyright section</p>
       </section>
-      <div>
+      <div class="col">
         <nav>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Accessibility</li>
-            <li>Careers</li>
-            <li>Media</li>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Accessibility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Media</a>
+            </li>
           </ul>
         </nav>
-        
       </div><!-- end of div for fotter nav -->
-      
-
     </footer>
   </div> <!--end of .container-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

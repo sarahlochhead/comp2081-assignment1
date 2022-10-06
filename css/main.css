@@ -87,6 +87,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General styles */ 
+/* Typography */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+}
+
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
