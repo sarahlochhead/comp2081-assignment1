@@ -21,18 +21,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&display=swap" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <header class="row">
       <div class="brand">
       <a href="#">
-        <img src="./img/playful-cat-by-graphuvarov-on-logopond-400px.png" alt="A cat playing with a bright star curled up in a circle in the shape of the letter C.">
+        <img src="img/playful-cat-by-graphuvarov-on-logopond.png" alt="A cat playing with a bright star curled up in a circle in the shape of the letter C.">
         <!-- logo design by graphuvarov on logopond: https://logopond.com/graphuvarov/showcase/detail/308144 -->
       </a>
         <h1>Circle Cat University</h1>
@@ -40,44 +39,59 @@
       <nav>
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Courses</a>
+            <a class="nav-link" href="#courses">Courses</a>
           </li>
           <li>
-            <a class="nav-link" href="#">Impact</a>
+            <a class="nav-link" href="#impact">Impact</a>
           </li>
           <li>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li> 
         </ul>
       </nav>
     </header>
     <main>
       <!-- mission section -->
-      <section>
-        <h2>Mission</h2>
-        <p>Our goal is to shape people who love felines into the best possible caregivers for their furry friends. Our courses guide and support the ebb and flow of the feline to human relationship toward it's natural balance. <br> Because cat's don't have owners they have staff.</p>
+      <section id="about" class="row">
+        <div class="overlay">
+          <h2>Mission</h2>
+          <p>Our goal is to shape people who love felines into the best possible caregivers for their furry friends. Our courses guide and support the ebb and flow of the feline to human relationship toward it's natural balance.<p>
+          <p><span>Because cats don't have owners they have staff.</span></p>
+        </div><!--.overlay-->
       </section>
       <!-- courses section -->
-      <section class="row">
+      <section id="courses" class="row gx-4 gy-2">
         <h2>Courses</h2>
-        <article class="col">
-          <h3>Anticipating Hunger</h3>
-          <p>Spoiler alert you're already too late</p>
-        </article>
-        <article class="col">
-          <h3>Cat-shmere Dreams</h3>
-          <p>Learning to relinquish your favourite sweater</p>
-        </article>
-        <article class="col">
-          <h3>Before the Bite</h3>
-          <p>How to know when a snuggle session is over</p>
-        </article>
+          <article class="col">
+            <img src="img/grey-tabby-cat-food-dishes-400x400.jpg" alt="A grey tabby licks their lips in front of their food dishes.">
+            <div>
+              <h3>Anticipating Hunger</h3>
+              <p>Spoiler alert you're already too late!</p>
+              <button>Register</button>
+            </div>
+          </article>
+          <article class="col">
+            <img src="img/cozy-cat-under-sweater-400x400.jpg" alt="A sleepy kitten rests under a cozy knitted sweater.">
+            <div>
+              <h3>Cat-shmere Dreams</h3>
+              <p>Learning to relinquish your favourite sweater</p>
+              <button>Register</button>
+            </div>
+          </article>
+          <article class="col">
+            <img src="img/tabby-cat-being-brushed-400x400.jpg" alt="A brown tabby cat looks distraught while being brushed on the top of their head.">
+            <div>
+              <h3>Before the Bite</h3>
+              <p>How to know when a snuggle session is over</p>
+              <button>Register</button>
+            </div>
+          </article>
       </section>
       <!-- impact section -->
-      <section class="row">
+      <section id="impact" class="row gx-2 gy-2">
         <h2>Why Study at Circle Cat?</h2>
         <p>The proof is in the catnip</p>
         <article class="col">
@@ -98,33 +112,45 @@
         </article>
       </section>
       <!-- testimonials section -->
-      <section>
+      <section class="row">
         <h2>Testimonials</h2>
-        <div>
-          <p>"Meow, meeeeow, meow-meow meow meow. Meeee-ow meow meeooow mew mew purrrrrrr!"</p>
-          <p>-Snowball</p>
-        </div>
-        <div class="hidden">
-          <p>"Smokey and I have never gotten along better! Circle Cat University taught me that my main focus should always be on subservience to felines. Conceding to this has made our days smoother and happier!"</p>
-          <p>-Tamara</p>
-        </div>
-        <div class="hidden">
-          <p>"Puuuuurrrrrrrrrr, meow! Meow mew mew meow!"</p>
-          <p>-Fluffy</p>
-        </div>
-        <div class="hidden">
-          <p>"Circle Cat University helped me learn all the sign and signals I was missing related to cat hunger. Now we all eat in peace without a chorus of guttural deep meows!"</p>
-          <p>-Albert</p>
-        </div>
+        <figure>
+          <img src="img/white-short-hair-cat-300x300.jpg" alt="A white short-hair cat with golden eyes stares forward.">
+          <blockquote>
+            Meow, meeeeow, meow-meow meow meow. Meeee-ow meow meeooow mew mew purrrrrrr!
+          </blockquote>
+          <figcaption>-Snowball</figcaption>
+        </figure>
+        <figure>
+          <img src="img/young-woman-holding-orange-tabby-cat-300x300.jpg" alt="A young white woman with a messy bun holds and nuzzels her face on an orange tabby cat's head">
+          <blockquote>
+            Smokey and I have never gotten along better! Circle Cat University taught me that my main focus should always be on subservience to felines. Conceding to this has made our days smoother and happier!
+          </blockquote>
+          <figcaption>-Tamara</figcaption>
+        </figure>
+        <figure>
+          <img src="img/orange-long-hair-cat-300x300.jpg" alt="A fluffy orange cat looks regally forward">
+          <blockquote>
+            Puuuuurrrrrrrrrr, meow! Meow mew mew meow!
+          </blockquote>
+          <figcaption>-Fluffy</figcaption>
+        </figure>
+        <figure>
+          <img src="img/young-man-holding-grey-and-white-cat-300x300.jpg" alt="A young white man with short hair holds a grey and white cat against his chest while smiling.">
+          <blockquote>
+            Circle Cat University helped me learn all the sign and signals I was missing related to cat hunger. Now we all eat in peace without a chorus of guttural deep meows!
+          </blockquote>
+          <figcaption>-Albert</figcaption>
+        </figure>
       </section>
       <!-- CTA for newsletter -->
-      <section>
+      <section class="row">
         <h2>Be in the meo-know</h2>
         <p>Stay up to date on new course offerings, promotions and some cat videos of course!</p>
         <!-- some type of email input here styled nicely-->
       </section>
     </main>
-    <footer class="row">
+    <footer id="contact" class="row">
       <section class="col">
         <h4>Contact Info</h4>
         <p>705-867-5309</p>
@@ -138,11 +164,11 @@
       <section class="col">
         <h4>Let's Get Social</h4>
         <p> add fa social icons here</p>
-        <p>Coyright section</p>
+        <p>Copyright section</p>
       </section>
-      <div class="col">
+      <div class="col-2">
         <nav>
-          <ul class="nav justify-content-end">
+          <ul class="nav justify-content-start">
             <li class="nav-item">
               <a class="nav-link">Privacy Policy</a>
             </li>
@@ -157,7 +183,7 @@
             </li>
           </ul>
         </nav>
-      </div><!-- end of div for fotter nav -->
+      </div><!-- end of div for footer nav -->
     </footer>
   </div> <!--end of .container-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
