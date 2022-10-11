@@ -184,8 +184,9 @@ color: #FAFF81;
 /* Courses Styles */
 
 #courses {
-  padding: 2%;
+  padding: 2% 2% 4%;
   text-align: center;
+  background: linear-gradient(180deg, transparent 20%, #FAFF81 35%, transparent 75%);
 }
 
 #courses h2 {
@@ -218,6 +219,48 @@ color: #FAFF81;
   border-color:#160040;
   background-color: #160040;
   color: #FAFF81;
+}
+
+/* Impact Styles */
+
+#impact {
+  padding: 2%;
+  background: linear-gradient(180deg, transparent 5%,  #C6696C 100% )
+}
+
+#impact h2, 
+#impact > p {
+  text-align: center;
+}
+
+#impact h2 {
+  background-image: linear-gradient(120deg, #FAFF81 0, #FAFF81 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 1rem;
+  background-position: 0 65%;
+}
+
+#impact article{
+  margin: 25px 25px;
+  padding: 4%;
+  background-color: #160040;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 100px 0 100px 0;  
+  max-height: 500px;
+  position: relative;
+  box-shadow:  5px 5px #ffffff;
+}
+
+#impact p {
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+}
+
+#impact i {
+  font-size: 80px;
+  position: absolute;
+  bottom: 0;
 }
 
 /* Footer Styles */
