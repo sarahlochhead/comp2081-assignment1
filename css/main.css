@@ -110,17 +110,6 @@ h6 {
   font-weight: 700;
 }
 
-blockquote {
-  font-family: 'Raleway', sans-serif;
-}
-
-figcaption {
-  font-family: 'Sacramento', cursive;
-  font-size: 1.75rem;
-}
-
-
-
 /* Header Styles */
 
 .brand {
@@ -225,7 +214,7 @@ color: #FAFF81;
 
 #impact {
   padding: 2%;
-  background: linear-gradient(180deg, transparent 5%,  #C6696C 100% )
+  background: linear-gradient(180deg, transparent 5%,  rgb(198, 105, 108, 0.5) 100% , transparent 95%)
 }
 
 #impact h2, 
@@ -240,16 +229,16 @@ color: #FAFF81;
   background-position: 0 65%;
 }
 
-#impact article{
+#impact article {
   margin: 25px 25px;
   padding: 4%;
   background-color: #160040;
   color:#FFFFFF;
   border: none;
-  border-radius: 100px 0 100px 0;  
+  border-radius: 10px 100px 10px 100px;  
   max-height: 500px;
   position: relative;
-  box-shadow:  5px 5px #ffffff;
+  box-shadow:  8px 8px #ffffff;
 }
 
 #impact p {
@@ -260,14 +249,58 @@ color: #FAFF81;
 #impact i {
   font-size: 80px;
   position: absolute;
-  bottom: 0;
+  right: 20px;
+  bottom: 10px;
 }
+
+/* Testimonial Styles */
+#testimonials {
+  padding: 4% 2%;
+}
+
+#testimonials h2 {
+  margin-bottom: 2%;
+}
+
+figure {
+  display: flex;
+  align-items: center;  
+}
+
+.img-container {
+  background-color: rgb(198, 105, 108 ,0.5);
+}
+
+figure img {
+  border-radius: 100px 0 100px 0;
+  border-bottom: 10px solid #A3A0CB;
+  border-right: 5px solid #C6696C;
+  padding: 5px;
+}
+
+figcaption {
+  font-family: 'Raleway', sans-serif;
+  padding: 4%;
+}
+
+figcaption span {
+  font-family: 'Sacramento', cursive;
+  font-size: 1.75rem;
+  background-image: linear-gradient(120deg, #FAFF81 0, #FAFF81 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 1rem;
+  background-position: 0 65%;
+}
+
+
 
 /* Footer Styles */
 footer {
   background-color: #160040;
   color: #A3A0CB;
 }
+
+
 
 
 /* ==========================================================================
