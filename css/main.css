@@ -201,7 +201,7 @@ color: #FAFF81;
   border-radius: 8px;
   padding: 2%;
   background-color: #C6696C;
-  transition: all linear 50ms;
+  transition: all linear 200ms;
 }
 
 #courses button:hover {
@@ -280,7 +280,9 @@ figure img {
 
 figcaption {
   font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem ;
   padding: 4%;
+
 }
 
 figcaption span {
@@ -292,12 +294,54 @@ figcaption span {
   background-position: 0 65%;
 }
 
+/* Newsletter CTA Styles */
+#newsletter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 10%;
+  background-image: url(../img/brown-tabby-cat-laying-on-side-lrg.jpg);
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 3rem;
+}
 
+#newsletter h2 {
+  text-decoration: underline 10px #FAFF81;
+}
+
+#newsletter input {
+  width: 50%;
+  border: 2px solid #160040;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#newsletter input:focus {
+  background-color: #FAFF81;
+}
+
+#newsletter button {
+  border: 2px solid #C6696C;
+  border-radius: 8px;
+  background-color: #C6696C;
+  transition: all linear 200ms;
+  width: 10%;
+}
+
+#newsletter button:hover {
+  border-color:#160040;
+  background-color: #160040;
+  color: #FAFF81;
+}
 
 /* Footer Styles */
 footer {
   background-color: #160040;
   color: #A3A0CB;
+  padding: 2%;
 }
 
 
