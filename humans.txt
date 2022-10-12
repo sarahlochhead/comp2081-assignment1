@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Sarah -- Designer/Developer -- @sarahlochhead
 
 # THANKS
 
-    <name>
+    To all the cute internet cats for their inspiration!
 
 # TECHNOLOGY COLOPHON
 
