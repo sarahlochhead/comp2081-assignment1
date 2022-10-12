@@ -175,7 +175,7 @@ color: #FAFF81;
 #courses {
   padding: 2% 2% 4%;
   text-align: center;
-  background: linear-gradient(180deg, transparent 20%, #FAFF81 35%, transparent 75%);
+  background: linear-gradient(180deg, transparent 20%, #A3A0CB 35%, transparent 75%);
 }
 
 #courses h2 {
@@ -256,6 +256,10 @@ color: #FAFF81;
 /* Testimonial Styles */
 #testimonials {
   padding: 4% 2%;
+  background-image: url(../img/white-cat-fur-texture-lrg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #testimonials h2 {
@@ -316,11 +320,14 @@ figcaption span {
 #newsletter input {
   width: 50%;
   border: 2px solid #160040;
+  outline: none;
   border-radius: 8px;
   margin-bottom: 10px;
+  transition: all linear 0.5s;
 }
 #newsletter input:focus {
   background-color: #FAFF81;
+  border-radius: 12px;
 }
 
 #newsletter button {
